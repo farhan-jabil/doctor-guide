@@ -1,0 +1,31 @@
+@media (max-width: 1024px){
+
+    .checkbtn{
+        display: block;
+    }
+
+    .nav_up{
+        position: fixed;
+        top: 0;
+    }
+
+    .nav_ul{
+        position: fixed;
+        width: 100vw;
+        background: #2c3e50;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav_ul li{
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    #check:checked ~ .nav_ul{
+        left: 0;    
+    }
+    
+}
