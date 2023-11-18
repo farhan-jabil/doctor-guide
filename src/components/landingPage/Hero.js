@@ -1,7 +1,5 @@
 import React from "react";
 import { images } from "../../utils/demo_Images";
-import HalfCircle from "../../lottie-animation/half_circle.json";
-import Lottie from "lottie-react";
 
 
 export default function Hero() {
@@ -9,12 +7,11 @@ export default function Hero() {
     <>
       <section className="flex flex-col lg:flex-row w-fit mx-auto mt-[70px] lg:mt-0 px-[0px] lg:px-[70px]">
         <div className="mt-[20px] xl:mt-[49px] absolute left-0">
-          {/* <img
+          <img
             src={images.half_circle_1}
             className="h-[110px] xl:h-[244px] xl:w-[122px]"
             alt=""
-          /> */}
-          <Lottie loop={true} animationData={HalfCircle} className="h-[110px] xl:h-[350px] xl:w-[280px] rotate-90"/>
+          />
         </div>
 
         <div className="relative mt-[20px] lg:mt-[67px] xl:pl-[18px] xl:ml-0">

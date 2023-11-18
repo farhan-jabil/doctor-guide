@@ -1,19 +1,15 @@
 import React from "react";
 import { images } from "../../utils/demo_Images";
-// import HalfCircle from "../../lottie-animation/half_circle.json";
-// import Lottie from "lottie-react";
 
 export default function Subscribe() {
   return (
     <>
       <section className="relative">
-        {/* <img
+        <img
           src={images.half_circle_2}
           className="absolute top-[-129px] right-0"
           alt=""
-        /> */}
-        
-        {/* <Lottie loop={true} animationData={HalfCircle} className="absolute top-[-129px] right-0 h-[110px] xl:h-[350px] xl:w-[280px] rotate-[270deg]"/> */}
+        />
         <div className="bg-[#0089BA] mx-auto lg:h-[448px] rounded-[20px] mt-[196px] pb-[20px] relative w-[80%] xl:w-[84%]">
           <div className="flex flex-col ">
             <div className="relative">
