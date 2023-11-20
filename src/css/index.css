@@ -59,18 +59,25 @@ nav ul li a{
   content: ""!important;
 }
 
-/* .custom-dot {
-  width: 10px;
-  height: 10px;
-  background-color: gray;
-  border-radius: 50%;
-  margin-top: 50px;
-  margin-right: 5px;
-  cursor: pointer;
+/* .numbers {
+  display: flex;
+  justify-content: space-around;
 }
 
-.custom-dot.active {
-  background-color: red; 
+.number {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.number .counter {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.9em;
+  margin: 6px 0;
+}
+.number span {
+  font-size: 1.2em;
+  display: block;
 } */
 
 
