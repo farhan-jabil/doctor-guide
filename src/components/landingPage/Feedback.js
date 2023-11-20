@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { images } from "../../utils/demo_Images";
+import { data } from "../../utils/demo_data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -40,54 +41,28 @@ export default function Feedback() {
             {...settings}
             className="flex max-w-[980px] pb-[43px] mx-auto w-1/2 items-center justify-between px-[40px] xl:px-0 "
           >
-            <div className="!flex flex-col lg:flex-row w-fit">
-              <img
-                src={images.patient}
-                className="h-[80px] w-[80px] lg:w-[170px] lg:h-[170px] xl:h-auto xl:w-auto mx-auto"
-                alt=""
-              />
-              <div className="text-center lg:text-left lg:ml-[68px] font-[open sans] font-[400] mx-auto">
-                <p className="mx-auto font-[400] text-[16px] leading-[24px] px-5 lg:px-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Accumsan duis posuere scelerisque curabitur lorem. Viverra at
-                  venenatis, arcu et. Elementum nunc eleifend ipsum mauris ut
-                  nunc aliquet nulla aliquet. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit 1.
-                </p>
-                <div className="mt-5">
-                  <p>
-                    <span className="text-[15px]">TOM COOPPER</span> <br />
-                    <span className="text-[16px] text-[#FF8B42]">
-                      Managing Director Of Art
-                    </span>
+            {data.feedback.map((x, y) => (
+              <div className="!flex flex-col lg:flex-row w-fit">
+                <img
+                  src={x.image}
+                  className="h-[80px] w-[80px] lg:w-[170px] lg:h-[170px] xl:h-auto xl:w-auto mx-auto"
+                  alt=""
+                />
+                <div className="text-center lg:text-left lg:ml-[68px] font-[open sans] font-[400] mx-auto">
+                  <p className="mx-auto font-[400] text-[16px] leading-[24px] px-5 lg:px-0">
+                    {x.desc}
                   </p>
+                  <div className="mt-5">
+                    <p>
+                      <span className="text-[15px]">{x.name}</span> <br />
+                      <span className="text-[16px] text-[#FF8B42]">
+                        {x.designation}
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="!flex flex-col lg:flex-row w-fit">
-              <img
-                src={images.patient}
-                className="h-[80px] w-[80px] lg:w-[170px] lg:h-[170px] xl:h-auto xl:w-auto mx-auto"
-                alt=""
-              />
-              <div className="text-center lg:text-left lg:ml-[68px] font-[open sans] font-[400] mx-auto">
-                <p className="mx-auto font-[400] text-[16px] leading-[24px] px-5 lg:px-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Accumsan duis posuere scelerisque curabitur lorem. Viverra at
-                  venenatis, arcu et. Elementum nunc eleifend ipsum mauris ut
-                  nunc aliquet nulla aliquet. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit 2.
-                </p>
-                <div className="mt-5">
-                  <p>
-                    <span className="text-[15px]">TOM COOPPER</span> <br />
-                    <span className="text-[16px] text-[#FF8B42]">
-                      Managing Director Of Art
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </Slider>
         </div>
       </section>

@@ -59,6 +59,20 @@ nav ul li a{
   content: ""!important;
 }
 
+/* .custom-dot {
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.custom-dot.active {
+  background-color: red; 
+} */
+
 
 .containerr {
     width: 100%;
