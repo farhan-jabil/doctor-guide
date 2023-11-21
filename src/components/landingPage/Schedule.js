@@ -1,18 +1,61 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { data } from "../../utils/demo_data";
 import { images } from "../../utils/demo_Images";
 
 export default function Schedule() {
+  const [scrollPosition, setScrollPosition] = useState(100); // Set an initial value greater than 0
+  const [visibleItems] = useState(4);
+  const [totalItems, setTotalItems] = useState(data.schedule_items.length);
+  const [containerHeight, setContainerHeight] = useState(visibleItems * 91);
+
+  const handleScroll = (direction) => {
+    const scrollStep = 300;
+    const container = document.getElementById("scroll-container");
+    const itemHeight =
+      container && container.firstChild
+        ? container.firstChild.clientHeight
+        : 91;
+    const maxScroll = Math.max(0, totalItems * itemHeight - containerHeight);
+
+    if (direction === "up") {
+      setScrollPosition((prev) => Math.max(0, prev - scrollStep));
+    } else if (direction === "down") {
+      setScrollPosition((prev) => Math.min(maxScroll, prev + scrollStep));
+    }
+  };
+
+  useEffect(() => {
+    setTotalItems(data.schedule_items.length);
+    setContainerHeight(visibleItems * 91);
+  }, [data.schedule_items.length, visibleItems]);
+
+  const downButtonColor =
+    scrollPosition === 0
+      ? "#0089BA"
+      : scrollPosition >= totalItems * 91 - containerHeight
+      ? ""
+      : "#0089BA";
+
+  const showUpButton = scrollPosition > 0;
+
   return (
     <>
       <section className="xl:w-[1280px] md:mx-[20px] lg:mx-[70px] xl:mx-auto ">
         <div className="flex flex-col md:flex-row">
           <div className="flex relative mt-[70px] md:mt-[150px] xl:mt-[339px] md:w-[50%] self-center">
             <div className="mt-[400px] lg:mt-[300px] mr-[30px] lg:mr-[54.5px] ml-5 lg:ml-0 ">
-              <p className="w-[42.5px] h-[42.5px] rounded-[50%] bg-[#9E9F93] flex justify-center">
-                <i className="fa-sharp fa-solid fa-angle-up text-white mt-[12px]"></i>
-              </p>
-              <p className="w-[42.5px] h-[42.5px] rounded-[50%] bg-[#0089BA] flex justify-center mt-[49.5px]">
+              {showUpButton && (
+                <p
+                  className="w-[42.5px] h-[42.5px] rounded-[50%] bg-[#0089BA] flex justify-center cursor-pointer"
+                  onClick={() => handleScroll("up")}
+                >
+                  <i className="fa-sharp fa-solid fa-angle-up text-white mt-[12px]"></i>
+                </p>
+              )}
+              <p
+                className={`w-[42.5px] h-[42.5px] rounded-[50%] bg-[${downButtonColor}] flex justify-center cursor-pointer mt-[30px]`}
+                onClick={() => handleScroll("down")}
+              >
                 <i className="fa-sharp fa-solid fa-angle-down text-white mt-[12px]"></i>
               </p>
             </div>
@@ -22,8 +65,15 @@ export default function Schedule() {
                 Doctor's Schedule Today
               </p>
 
-              <div className="mt-[85.5px]">
-                <ul className="space-y-[38.5px]">
+              <div
+                className="mt-[85.5px] overflow-hidden"
+                style={{ height: `${visibleItems * 91}px` }}
+              >
+                <ul
+                  id="scroll-container"
+                  className="space-y-[38.5px] transition-transform duration-500 ease-in-out"
+                  style={{ transform: `translateY(-${scrollPosition}px)` }}
+                >
                   {data.schedule_items.map((x, y) => (
                     <li className="" key={y}>
                       <div className="flex flex-col lg:flex-row w-auto lg:w-[412.5px] h-[91px] border-b-[1.01px] pb-[130px] lg:pb-[27.64px]">

@@ -56,9 +56,9 @@ export default function Expert() {
                       <p className="text-[20px] leading-[30px] font-[poppins]  lg:w-[120px] xl:w-[136px] h-[30px] ml-5 mt-[31px]">
                         Dr. {x.name}
                       </p>
-                      <p className="mt-[31px] ml-[80px] lg:ml-[100px] xl:ml-[183px] text-white">
+                      {/* <p className="mt-[31px] ml-[80px] lg:ml-[100px] xl:ml-[183px] text-white">
                         <img src={x.bookmark_img} alt="" />
-                      </p>
+                      </p> */}
                     </div>
                     <p className="w-[182px] h-[28px] ml-5 mt-[10px] font-[400] text-[16px] leading-[28px]">
                       {x.degree}
@@ -68,7 +68,7 @@ export default function Expert() {
                         {x.details}
                       </p>
                       <button
-                        className={`mx-auto xl:ml-[41px] mt-3 xl:mt-[25px] h-[40px] xl:h-[56px] w-[120px] xl:w-[134px] bg-[${x.button_back}] text-white rounded-[6px]`}
+                        className={`mx-auto xl:ml-[41px] mt-3 xl:mt-[25px] h-[40px] xl:h-[56px] w-[120px] xl:w-[134px] bg-[#FF8B42] hover:bg-[#0089BA] text-white rounded-[6px]`}
                       >
                         Book Now
                       </button>
