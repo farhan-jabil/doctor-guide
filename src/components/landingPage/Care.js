@@ -4,7 +4,7 @@ import { data } from '../../utils/demo_data'
 export default function Care() {
   return (
     <>
-     <section className='w-[80%] lg:w-[84.5%] mx-auto z-[-1]'>
+     <section id='care' className='w-[80%] lg:w-[84.5%] mx-auto z-[-1]'>
 
         <p className='h-[60px] font-[poppins] font-[700] text-[24px] lg:text-[40px] leading-[60px] text-[#273240] mt-[106.5px] mx-auto text-center'>Our Medical Care</p>
         <p className='mt-[12px] mx-[auto] w-[162px]'>Services We Provide</p>

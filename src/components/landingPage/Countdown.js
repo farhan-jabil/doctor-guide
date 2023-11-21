@@ -15,19 +15,21 @@ export default function Countdown() {
 
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.5, // Adjust the threshold as needed
+      threshold: 0.5,
     });
 
-    if (countdownRef.current) {
-      observer.observe(countdownRef.current);
+    const currentRef = countdownRef.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (countdownRef.current) {
-        observer.unobserve(countdownRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
-  }, [countdownRef]);
+  }, []);
 
   return (
     <>

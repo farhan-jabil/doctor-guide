@@ -4,8 +4,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
 *{
   box-sizing: border-box;
+}
+
+/* svg {
+  display: inline;
+} */
+
+html, body {
+  scroll-behavior: smooth !important;
 }
 
 
@@ -58,28 +67,6 @@ nav ul li a{
 .slick-next:before, .slick-prev:before {
   content: ""!important;
 }
-
-/* .numbers {
-  display: flex;
-  justify-content: space-around;
-}
-
-.number {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.number .counter {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 1.9em;
-  margin: 6px 0;
-}
-.number span {
-  font-size: 1.2em;
-  display: block;
-} */
-
 
 .containerr {
     width: 100%;
