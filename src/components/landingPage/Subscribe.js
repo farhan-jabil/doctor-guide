@@ -36,9 +36,15 @@ export default function Subscribe() {
                   placeholder="Your email here"
                 />
 
-                <button className="bg-[#FF8B42] w-[70px]  lg:w-[130px] xl:w-[164px] h-[56px] rounded-[6px] text-white self-center">
+                {/* <button className="bg-[#FF8B42] w-[70px]  lg:w-[130px] xl:w-[164px] h-[56px] rounded-[6px] text-white self-center">
                   Submit
-                </button>
+                </button> */}
+                <div className="relative inline-block group self-center">
+                  <button className="z-10 relative w-[70px] lg:w-[130px] xl:w-[164px] h-[56px] rounded-[6px] bg-[#FF8B42] text-white mx-auto overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
+                    <span className="relative z-10">Submit</span>
+                    <span className="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

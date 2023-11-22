@@ -67,11 +67,17 @@ export default function Expert() {
                       <p className="xl:w-[198px] xl:h-[72px] font-[400] text-[15px] leading-[24px]">
                         {x.details}
                       </p>
-                      <button
+                      {/* <button
                         className={`mx-auto xl:ml-[41px] mt-3 xl:mt-[25px] h-[40px] xl:h-[56px] w-[120px] xl:w-[134px] bg-[#FF8B42] hover:bg-[#0089BA] text-white rounded-[6px]`}
                       >
                         Book Now
-                      </button>
+                      </button> */}
+                      <div class="relative inline-block group">
+                        <button class="z-10 relative h-[40px] xl:h-[56px] w-[120px] xl:w-[134px] text-center rounded-[6px] bg-[#FF8B42] text-white mx-auto xl:ml-[41px] mt-[40px] xl:mt-[25px] cursor-pointer overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
+                          <span class="relative z-10">Book Now</span>
+                          <span class="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -17,9 +17,30 @@ export default function Footer() {
                 Consequat in metus arcu eget.
               </p>
               <div className="lg:mt-[37px] mt-10 lg:ml-0 space-x-[24px]">
-                <i className="fa-brands fa-twitter bg-[#FF8B42] cursor-pointer text-white rounded-[10px] w-[34px] xl:w-[44px] h-[34px] xl:h-[44px] pl-[9px] xl:pl-[13px] pt-[9px] xl:pt-[14px]"></i>
-                <i className="fa-brands fa-linkedin-in bg-[#FF8B42] cursor-pointer text-white rounded-[10px] w-[34px] xl:w-[44px] h-[34px] xl:h-[44px] pl-[9px] xl:pl-[13px] pt-[9px] xl:pt-[14px]"></i>
-                <i className="fa-brands fa-facebook bg-[#FF8B42] cursor-pointer text-white rounded-[10px] w-[34px] xl:w-[44px] h-[34px] xl:h-[44px] pl-[9px] xl:pl-[13px] pt-[9px] xl:pt-[14px]"></i>
+              <div className="relative inline-block group self-center">
+                <button className="z-10 relative w-[34px] xl:w-[44px] h-[34px] xl:h-[44px] rounded-[10px] bg-[#FF8B42] text-white mx-auto overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
+                  <span className="relative flex flex-row items-center justify-center z-10">
+                    <i className="fa-brands fa-twitter"></i>
+                  </span>
+                  <span className="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
+                </button>
+              </div>
+              <div className="relative inline-block group self-center">
+                <button className="z-10 relative w-[34px] xl:w-[44px] h-[34px] xl:h-[44px] rounded-[10px] bg-[#FF8B42] text-white mx-auto overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
+                  <span className="relative flex flex-row items-center justify-center z-10">
+                    <i className="fa-brands fa-linkedin-in"></i>
+                  </span>
+                  <span className="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
+                </button>
+              </div>
+              <div className="relative inline-block group self-center">
+                <button className="z-10 relative w-[34px] xl:w-[44px] h-[34px] xl:h-[44px] rounded-[10px] bg-[#FF8B42] text-white mx-auto overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
+                  <span className="relative flex flex-row items-center justify-center z-10">
+                    <i className="fa-brands fa-facebook"></i>
+                  </span>
+                  <span className="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
+                </button>
+              </div>
               </div>
             </div>
 
@@ -64,9 +85,14 @@ export default function Footer() {
                 At vero eos et accusam et justou dolores et ea rebum tet clita
                 kasd gubergren no sea takimata.
               </p>
-              <div className="flex flex-row bg-[#FF8B42] w-[189px] h-[56px] md:h-[40px] lg:h-[56px] rounded-[6px] mt-[30px] items-center justify-center cursor-pointer">
-                <i className="fa-solid fa-arrow-up-from-bracket"></i>
-                <p className="ml-[10px]">View Schedule</p>
+              <div className="relative inline-block group self-center">
+                <button className="z-10 relative w-[70px] lg:w-[130px] xl:w-[164px] h-[56px] rounded-[6px] mt-[30px] bg-[#FF8B42] text-white mx-auto overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
+                  <span className="relative flex flex-row items-center justify-center z-10">
+                    <i className="fa-solid fa-arrow-up-from-bracket"></i>
+                    <p className="ml-[10px]">View Schedule</p>
+                  </span>
+                  <span className="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
+                </button>
               </div>
             </div>
           </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import { images } from "../../utils/demo_Images";
 
-
 export default function Hero() {
   return (
     <>
@@ -31,9 +30,12 @@ export default function Hero() {
             ever since the 1500s,
           </p>
 
-          <p className="w-[180px] xl:w-[243px] xl:h-[56px] py-[16px] text-center rounded-[6px] bg-[#FF8B42] text-white mx-auto lg:ml-0 xl:ml-0 mt-[40px] xl:mt-[34px] cursor-pointer">
-            Make Appointment
-          </p>
+          <div class="relative inline-block group">
+            <p class="z-10 relative w-[180px] xl:w-[243px] xl:h-[56px] py-[16px] text-center rounded-[6px] bg-[#FF8B42] text-white mx-auto lg:ml-0 xl:ml-0 mt-[40px] xl:mt-[34px] cursor-pointer overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
+              <span class="relative z-10">Make Appointment</span>
+              <span class="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
+            </p>
+          </div>
         </div>
 
         <div className="relative xl:ml-[34px] xl:w-[407px] xl:h-[618px] mt-[30px] lg:mt-[94px]">

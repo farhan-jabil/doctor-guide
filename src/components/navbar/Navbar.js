@@ -21,9 +21,9 @@ export default function Navbar() {
           >
             <ul className="flex flex-col lg:flex-row lg:space-x-[10px] xl:space-x-[13px] xl:my-[10px] lg:ml-[170px] xl:ml-[215px] p-1 text-sm font-medium border-0 dark:bg-gray-800 dark:border-gray-700">
               {data.navbar_items.map((x, y) => (
-                <li className="flex flex-row" key={y}>
+                <li className="flex flex-row group" key={y}>
                   <div
-                    className="block rounded bg-transparent my-1 dark:text-white cursor-pointer"
+                    className="block rounded bg-transparent my-1 dark:text-white cursor-pointer transition-transform duration-300 ease-in-out group-hover:scale-[1.3]"
                     aria-current="page"
                   >
                     {x.item}
@@ -37,14 +37,22 @@ export default function Navbar() {
 
             <ul className="flex flex-row xl:ml-[70px] space-x-[19px] text-sm font-medium border-0">
               <li>
-                <button className="bg-[#FF8B42] xl:w-[117px] lg:py-2.5 xl:py-4 lg:px-[24px] xl:px-[34.5px] rounded-md">
-                  LOGIN
-                </button>
+                <div class="relative inline-block group">
+                  <button class="z-10 relative xl:w-[117px] lg:h-[40px] xl:h-[56px] lg:px-[24px] xl:px-[34.5px] rounded-md bg-[#FF8B42] text-white border border-[#FF8B42] transition-all duration-500 ease-in-out group-hover:text-white group-hover:border-[#0089BA]">
+                    <span class="relative z-10 group-hover:scale-110">
+                      LOGIN
+                    </span>
+                    <span class="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100 rounded-md"></span>
+                  </button>
+                </div>
               </li>
               <li>
-                <button className="bg-[#FF8B42] xl:w-[117px] lg:py-2.5 xl:py-4 lg:px-[24px] xl:px-[34.5px] rounded-md">
-                  SIGNUP
-                </button>
+                <div class="relative inline-block group">
+                  <button class="z-10 relative xl:w-[117px] lg:h-[40px] xl:h-[56px] lg:px-[24px] xl:px-[34.5px] rounded-md bg-[#FF8B42] text-white border border-[#FF8B42] transition-all duration-500 ease-in-out group-hover:text-white group-hover:border-[#0089BA]">
+                    <span class="relative z-10">SIGNUP</span>
+                    <span class="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100 rounded-md"></span>
+                  </button>
+                </div>
               </li>
             </ul>
           </div>

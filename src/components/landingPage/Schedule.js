@@ -6,7 +6,7 @@ export default function Schedule() {
   const [scrollPosition, setScrollPosition] = useState(100); // Set an initial value greater than 0
   const [visibleItems] = useState(4);
   const [totalItems, setTotalItems] = useState(data.schedule_items.length);
-  const [containerHeight, setContainerHeight] = useState(visibleItems * 91);
+  const [containerHeight, setContainerHeight] = useState(visibleItems * 130);
 
   const handleScroll = (direction) => {
     const scrollStep = 300;
@@ -14,7 +14,7 @@ export default function Schedule() {
     const itemHeight =
       container && container.firstChild
         ? container.firstChild.clientHeight
-        : 91;
+        : 130;
     const maxScroll = Math.max(0, totalItems * itemHeight - containerHeight);
 
     if (direction === "up") {
@@ -26,17 +26,19 @@ export default function Schedule() {
 
   useEffect(() => {
     setTotalItems(data.schedule_items.length);
-    setContainerHeight(visibleItems * 91);
+    setContainerHeight(visibleItems * 130);
   }, [data.schedule_items.length, visibleItems]);
 
   const downButtonColor =
     scrollPosition === 0
-      ? "#0089BA"
+      ? "#0089BA" 
       : scrollPosition >= totalItems * 91 - containerHeight
       ? ""
       : "#0089BA";
 
-  const showUpButton = scrollPosition > 0;
+      console.log(scrollPosition)
+
+  const showUpButton = scrollPosition > 100;
 
   return (
     <>
@@ -67,7 +69,7 @@ export default function Schedule() {
 
               <div
                 className="mt-[85.5px] overflow-hidden"
-                style={{ height: `${visibleItems * 91}px` }}
+                style={{ height: `${visibleItems * 130}px` }}
               >
                 <ul
                   id="scroll-container"
