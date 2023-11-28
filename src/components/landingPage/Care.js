@@ -21,11 +21,11 @@ export default function Care() {
           ))}
         </div>
         
-        <div class="relative">
-            <p class="z-10 relative w-[180px] xl:w-[243px] xl:h-[56px] py-[16px] text-center rounded-[6px] bg-[#FF8B42] text-white mx-auto mt-[40px] xl:mt-[40px] cursor-pointer overflow-hidden transition-all duration-500 ease-in-out group group-hover:text-white">
-              <span class="relative z-10">LOAD MORE DEPARTMENTS</span>
-              <span class="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
-            </p>
+        <div className="relative">
+            <button className="z-10 block relative p-4 text-center rounded-[6px] bg-[#FF8B42] text-white mx-auto mt-[40px] xl:mt-[40px] cursor-pointer overflow-hidden transition-all duration-500 ease-in-out group group-hover:text-white">
+              <span className="relative z-10">Load More Departments</span>
+              <span className="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
+            </button>
           </div>
       </section>
     </>

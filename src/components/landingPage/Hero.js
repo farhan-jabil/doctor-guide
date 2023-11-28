@@ -30,11 +30,11 @@ export default function Hero() {
             ever since the 1500s,
           </p>
 
-          <div class="relative inline-block group">
-            <p class="z-10 relative w-[180px] xl:w-[243px] xl:h-[56px] py-[16px] text-center rounded-[6px] bg-[#FF8B42] text-white mx-auto lg:ml-0 xl:ml-0 mt-[40px] xl:mt-[34px] cursor-pointer overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
-              <span class="relative z-10">Make Appointment</span>
-              <span class="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
-            </p>
+          <div className="group">
+            <button className="z-10 relative block p-4 rounded-[6px] bg-[#FF8B42] text-white mx-auto lg:ml-0 mt-[40px] xl:mt-[34px] cursor-pointer overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
+              <span className="relative z-10">Make Appointment</span>
+              <span className="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
+            </button>
           </div>
         </div>
 

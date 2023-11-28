@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { data } from "../../utils/demo_data";
 import { images } from "../../utils/demo_Images";
 
+
 export default function Schedule() {
   const [scrollPosition, setScrollPosition] = useState(100); // Set an initial value greater than 0
   const [visibleItems] = useState(4);
@@ -42,7 +43,7 @@ export default function Schedule() {
 
   return (
     <>
-      <section className="xl:w-[1280px] md:mx-[20px] lg:mx-[70px] xl:mx-auto ">
+      <section className="xl:w-[1280px] md:mx-[20px] lg:mx-[70px] xl:mx-auto" id="schedule">
         <div className="flex flex-col md:flex-row">
           <div className="flex relative mt-[70px] md:mt-[150px] xl:mt-[339px] md:w-[50%] self-center">
             <div className="mt-[400px] lg:mt-[300px] mr-[30px] lg:mr-[54.5px] ml-5 lg:ml-0 ">
@@ -105,25 +106,6 @@ export default function Schedule() {
               src={images.doctor_3}
               alt=""
             />
-
-            <div className="flex absolute top-[-50px] md:top-[70px] lg:top-[-90px] xl:top-[188.15px] md:ml-0 xl:left-[-84px] w-[270px] h-[75px] ml-5 lg:ml-0 rounded-[33px] shadow-[5px_12px_12px_3px_rgba(139,139,139,0.25)] bg-white">
-              <div className="bg-[#FF8B42] w-[30px] lg:w-[45px] xl:w-[61px] h-[30px] lg:h-[45px] xl:h-[61px] rounded-[33px] my-[6.8px] ml-[6.78px]">
-                <img
-                  src={images.person}
-                  className="w-[15px] lg:w-[18px] xl:w-[24px] h-[15px] lg:h-[18px] xl:h-[27.5px] ml-[7px] lg:ml-[9px] xl:ml-[13.7px] mt-[7.7px]"
-                  alt=""
-                />
-              </div>
-
-              <div className="ml-[15px] lg:ml-[20px] xl:ml-[30px] lg:mt-[13px] xl:mt-[17px]">
-                <p className="text-[10px] xl:text-[13px] leading-[18px] font-[600] font-[poppins]">
-                  Consult Online
-                </p>
-                <p className="text-[13px] xl:text-[15px] leading-[24px] font-[400] font-[open sans]">
-                  Best Solution
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>

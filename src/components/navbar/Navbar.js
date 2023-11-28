@@ -37,20 +37,20 @@ export default function Navbar() {
 
             <ul className="flex flex-row xl:ml-[70px] space-x-[19px] text-sm font-medium border-0">
               <li>
-                <div class="relative inline-block group">
-                  <button class="z-10 relative xl:w-[117px] lg:h-[40px] xl:h-[56px] lg:px-[24px] xl:px-[34.5px] rounded-md bg-[#FF8B42] text-white border border-[#FF8B42] transition-all duration-500 ease-in-out group-hover:text-white group-hover:border-[#0089BA]">
-                    <span class="relative z-10 group-hover:scale-110">
+                <div className="relative inline-block group">
+                  <button className="z-10 relative xl:w-[117px] lg:h-[40px] xl:h-[56px] lg:px-[24px] xl:px-[34.5px] rounded-md bg-[#FF8B42] text-white border border-[#FF8B42] transition-all duration-500 ease-in-out group-hover:text-white group-hover:border-[#0089BA]">
+                    <span className="relative z-10 group-hover:scale-110">
                       LOGIN
                     </span>
-                    <span class="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100 rounded-md"></span>
+                    <span className="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100 rounded-md"></span>
                   </button>
                 </div>
               </li>
               <li>
-                <div class="relative inline-block group">
-                  <button class="z-10 relative xl:w-[117px] lg:h-[40px] xl:h-[56px] lg:px-[24px] xl:px-[34.5px] rounded-md bg-[#FF8B42] text-white border border-[#FF8B42] transition-all duration-500 ease-in-out group-hover:text-white group-hover:border-[#0089BA]">
-                    <span class="relative z-10">SIGNUP</span>
-                    <span class="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100 rounded-md"></span>
+                <div className="relative inline-block group">
+                  <button className="z-10 relative xl:w-[117px] lg:h-[40px] xl:h-[56px] lg:px-[24px] xl:px-[34.5px] rounded-md bg-[#FF8B42] text-white border border-[#FF8B42] transition-all duration-500 ease-in-out group-hover:text-white group-hover:border-[#0089BA]">
+                    <span className="relative z-10">SIGNUP</span>
+                    <span className="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100 rounded-md"></span>
                   </button>
                 </div>
               </li>
@@ -58,7 +58,7 @@ export default function Navbar() {
           </div>
         </nav>
 
-        <nav className="nav_up block lg:hidden w-screen h-[70px] text-white z-[1]">
+        <nav className="nav_up block lg:hidden w-screen h-[70px] text-white z-[1000]">
           <input type="checkbox" id="check" />
           <label htmlFor="check" className="checkbtn">
             <i className="fa-sharp fa-solid fa-bars"></i>

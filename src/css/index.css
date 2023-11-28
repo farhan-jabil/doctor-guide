@@ -43,9 +43,6 @@ nav ul li a{
 
 .checkbtn{
   font-size: 20px;
-
-
-  
   color: white;
   float: right;
   line-height: 80px;
@@ -66,6 +63,10 @@ nav ul li a{
 
 .slick-next:before, .slick-prev:before {
   content: ""!important;
+}
+
+.experts-slider .slick-next, .experts-slider .slick-prev{
+  display: none !important;
 }
 
 .containerr {

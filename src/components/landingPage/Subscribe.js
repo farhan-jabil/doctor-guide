@@ -30,17 +30,13 @@ export default function Subscribe() {
                 tellus, luctus nec.
               </p>
 
-              <div className="flex w-full max-w-[250px] lg:max-w-[400px] xl:max-w-[550px] bg-white mt-[10%] md:mt-[10px] mx-auto lg:mx-0 rounded-[6px]">
+              <div className="flex flex-col lg:flex-row justify-between w-full lg:w-[80%] px-3 lg:px-6 py-3 lg:py-0 bg-white mt-[10%] md:mt-[10px] mx-auto lg:mx-0 rounded-[6px]">
                 <input
-                  className="w-[170px]  lg:w-[250px] xl:w-[350px] h-[78px] rounded-[6px] pl-[22px] pt-[24px] pb-[26px]"
+                  className="rounded-[6px] py-6 w-full mr-5 text-center lg:text-left"
                   placeholder="Your email here"
                 />
-
-                {/* <button className="bg-[#FF8B42] w-[70px]  lg:w-[130px] xl:w-[164px] h-[56px] rounded-[6px] text-white self-center">
-                  Submit
-                </button> */}
-                <div className="relative inline-block group self-center">
-                  <button className="z-10 relative w-[70px] lg:w-[130px] xl:w-[164px] h-[56px] rounded-[6px] bg-[#FF8B42] text-white mx-auto overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
+                <div className="relative group self-center">
+                  <button className="z-10 relative py-2 lg:py-3 xl:py-4 px-4 lg:px-3 xl:px-16 rounded-[6px] bg-[#FF8B42] text-white mx-auto overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
                     <span className="relative z-10">Submit</span>
                     <span className="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
                   </button>
@@ -50,20 +46,6 @@ export default function Subscribe() {
           </div>
         </div>
       </section>
-
-      {/* <section className='relative'>
-     <img src={images.half_circle_2} className="absolute top-[-129px] right-0" alt=""/>
-      <div className='bg-[#0089BA] mx-auto h-[850px] lg:h-[448px] rounded-[20px] mt-[196px]  relative'> 
-        <img src={images.doctor_2_b} className="absolute top-[-30px] lg:top-[-78px] lg:left-[102px]" alt=""/>
-        <p className='absolute w-[211px] h-[42px] font-[poppins] font-[600] text-[28px] leading-[42px] text-white ml-[70px] lg:ml-[560px] lg:mt-[105px]'>Subscribe Now</p>
-
-        <p className='absolute lg:w-[384px] h-[56px] font-[open sans] font-[400] text-[16px] leading-[28px] text-white ml-[70px] lg:ml-[561px] lg:mt-[156px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</p>
-
-        <input className='absolute bg-white w-[90%] lg:w-[659px] h-[78px] rounded-[6px] ml-[20px] lg:ml-[560px] lg:mt-[266px] pl-[22px] pt-[24px] pb-[26px]' placeholder='Your email here'/>
-
-        <button className='bg-[#FF8B42] absolute w-[100px] lg:w-[164px] h-[56px] rounded-[6px] text-white ml-[63%] lg:ml-[1040px] lg:mt-[277px]'>Submit</button>
-      </div>
-     </section>  */}
     </>
   );
 }

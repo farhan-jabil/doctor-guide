@@ -7,14 +7,14 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function Feedback() {
   const CustomPrevArrow = (props) => (
-    <div className="slick-prev !left-[-150px] lg:w-[44px] lg:h-[22px]">
+    <div className="slick-prev !left-[10px] xl:!left-[-150px] !h-[100px]">
       <img {...props} src={images.left_arrow} className="w-full" alt="" />$
       {console.log("prev")}
     </div>
   );
 
   const CustomNextArrow = (props) => (
-    <div className="slick-next !right-[-150px] lg:w-[44px] lg:h-[22px]">
+    <div className="slick-next !right-[10px] xl:!right-[-150px] !h-[100px]">
       <img {...props} src={images.right_arrow} className="w-full" alt="" />$
       {console.log("next")}
     </div>
@@ -31,24 +31,24 @@ export default function Feedback() {
 
   return (
     <>
-      <section className="feedback w-[80%] xl:w-[84%] mx-auto mt-10 xl:mt-[120px] overflow-hidden rounded-[20px]  text-white">
+      <section className="feedback w-[80%] xl:w-[84%] mx-auto mt-[120px] overflow-hidden rounded-[20px]  text-white">
         <div className="border min-h-[510px] mx-auto bg-[#6e27f0cf] ">
-          <div className="font-[poppins] pt-[43px] pb-[49px] font-[700] text-[24px] lg:text-[32px] leading-[48px] mx-auto w-fit">
+          <div className="font-[poppins] pt-[43px] pb-[49px] font-[700] text-[24px] xl:text-[32px] leading-[48px] mx-auto w-fit">
             Patient Feedback
           </div>
 
           <Slider
             {...settings}
-            className="flex max-w-[980px] pb-[43px] mx-auto w-1/2 items-center justify-between px-[40px] xl:px-0 "
+            className="flex max-w-[980px] pb-[43px] mx-auto xl:w-1/2 items-center justify-between px-[40px] lg:px-[60px] xl:px-0 "
           >
             {data.feedback.map((x, y) => (
-              <div className="!flex flex-col lg:flex-row w-fit">
+              <div className="!flex flex-col xl:flex-row w-fit">
                 <img
                   src={x.image}
                   className="h-[80px] w-[80px] lg:w-[170px] lg:h-[170px] xl:h-auto xl:w-auto mx-auto"
                   alt=""
                 />
-                <div className="text-center lg:text-left lg:ml-[68px] font-[open sans] font-[400] mx-auto">
+                <div className="text-center xl:text-left xl:ml-[68px] font-[open sans] font-[400] mx-auto">
                   <p className="mx-auto font-[400] text-[16px] leading-[24px] px-5 lg:px-0">
                     {x.desc}
                   </p>

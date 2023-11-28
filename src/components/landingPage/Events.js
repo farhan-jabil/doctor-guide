@@ -69,13 +69,13 @@ export default function Events() {
             </p>
             <div className="mt-[45px] mb-[50px] w-fit lg:w-auto mx-auto lg:mx-0">
               <div className="relative inline-block group">
-                <button className="z-10 relative h-[40px] md:h-[56px] w-[90px] md:w-[167px] text-center rounded-[6px] bg-[#FF8B42] text-white mx-auto overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
+                <button className="z-10 relative py-4 px-4 lg:px-8 text-center rounded-[6px] bg-[#FF8B42] text-white mx-auto overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
                   <span className="relative z-10">Book Now</span>
                   <span className="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
                 </button>
               </div>
               <div className="relative inline-block group ml-[22px]">
-                <button className="z-10 relative h-[40px] md:h-[56px] w-[90px] md:w-[167px] text-center rounded-[6px] border-[1px] border-solid border-gray-500 text-[#FF8B42] mx-auto overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
+                <button className="z-10 relative py-4 px-4 lg:px-8 text-center rounded-[6px] border-[1px] border-solid border-gray-500 text-[#FF8B42] mx-auto overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
                   <span className="relative z-10">10 Available</span>
                   <span className="absolute inset-0 bg-[#FF8B42] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
                 </button>
@@ -117,13 +117,13 @@ export default function Events() {
             </p>
             <div className="mt-[45px] mb-[50px] w-fit lg:w-auto mx-auto lg:mx-0">
               <div className="relative inline-block group">
-                <button className="z-10 relative h-[40px] md:h-[56px] w-[90px] md:w-[167px] text-center rounded-[6px] bg-[#FF8B42] text-white mx-auto overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
+                <button className="z-10 relative py-4 px-4 lg:px-8 text-center rounded-[6px] bg-[#FF8B42] text-white mx-auto overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
                   <span className="relative z-10">Book Now</span>
                   <span className="absolute inset-0 bg-[#0089BA] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
                 </button>
               </div>
               <div className="relative inline-block group ml-[22px]">
-                <button className="z-10 relative h-[40px] md:h-[56px] w-[90px] md:w-[167px] text-center rounded-[6px] border-[1px] border-solid border-gray-500 text-[#FF8B42] mx-auto overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
+                <button className="z-10 relative py-4 px-4 lg:px-8 text-center rounded-[6px] border-[1px] border-solid border-gray-500 text-[#FF8B42] mx-auto overflow-hidden transition-all duration-500 ease-in-out group-hover:text-white">
                   <span className="relative z-10">10 Available</span>
                   <span className="absolute inset-0 bg-[#FF8B42] origin-left transform scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
                 </button>
