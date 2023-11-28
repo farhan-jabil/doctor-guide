@@ -37,8 +37,6 @@ export default function Schedule() {
       ? ""
       : "#0089BA";
 
-      console.log(scrollPosition)
-
   const showUpButton = scrollPosition > 100;
 
   return (

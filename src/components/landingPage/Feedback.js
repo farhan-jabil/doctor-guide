@@ -9,14 +9,12 @@ export default function Feedback() {
   const CustomPrevArrow = (props) => (
     <div className="slick-prev !left-[10px] xl:!left-[-150px] !h-[100px]">
       <img {...props} src={images.left_arrow} className="w-full" alt="" />$
-      {console.log("prev")}
     </div>
   );
 
   const CustomNextArrow = (props) => (
     <div className="slick-next !right-[10px] xl:!right-[-150px] !h-[100px]">
       <img {...props} src={images.right_arrow} className="w-full" alt="" />$
-      {console.log("next")}
     </div>
   );
   var settings = {

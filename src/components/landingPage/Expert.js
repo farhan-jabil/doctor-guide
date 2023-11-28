@@ -55,7 +55,7 @@ export default function Expert() {
 
         <Slider {...settings} className="experts-slider">
           {data.experts_items.map((x, y) => (
-            <div className="mt-[20px] lg:mt-[60px] mx-5 lg:mx-0" key={y}>
+            <div className="mt-[20px] lg:mt-[60px]" key={y}>
               <div className={`lg:block w-[75%] lg:w-[90%] mx-auto`}>
                 <img
                   src={x.image}
